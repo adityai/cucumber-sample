@@ -2,8 +2,8 @@ package com.iaditya.bdd.cucumber_sample;
 
 import cucumber.api.java8.En;
 
-public class LambdaStepDefs implements En {
-	public LambdaStepDefs() {
+public class LambdaCoffeeStepDefs implements En {
+	public LambdaCoffeeStepDefs() {
         Then(
         		"I got (\\d+) cups of coffee", 
         		(Integer coffeeCups) -> 

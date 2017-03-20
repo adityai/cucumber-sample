@@ -5,7 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class AnnotatedStepDefs {
+public class AnnotatedCoffeeStepDefs {
 	
     @Given("^there are (\\d+) coffees left in the machine$")
     public void thereAreNCoffeesLeftInTheMachine(int coffeeCups)
