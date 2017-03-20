@@ -14,6 +14,5 @@ Scenario: Buy last two coffees
   Given there are 2 coffees left in the machine
   And I have deposited 2 dollars
   When I press the coffee button
-  Then I should be served a coffee
-  Then I should be served a coffee
+  Then I got 2 cups of coffee
   
