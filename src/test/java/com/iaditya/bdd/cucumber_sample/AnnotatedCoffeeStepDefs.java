@@ -5,8 +5,18 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+/**
+ * Simple annotated cucumber step definitions
+ * 
+ * @author adityai
+ *
+ */
 public class AnnotatedCoffeeStepDefs {
 	
+	/**
+	 * Cucumber step to verify there are no coffees left in the machine
+	 * @param coffeeCups
+	 */
     @Given("^there are (\\d+) coffees left in the machine$")
     public void thereAreNCoffeesLeftInTheMachine(int coffeeCups)
 	{
