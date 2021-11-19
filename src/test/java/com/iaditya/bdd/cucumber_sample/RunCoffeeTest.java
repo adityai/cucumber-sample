@@ -12,7 +12,13 @@ import cucumber.api.junit.Cucumber;
  *
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "html:target/cucumber"})
-public class RunCoffeeTest {
+@CucumberOptions(
+        plugin = {"pretty",
+                "html:target/cucumber-reports/cucumber.html",
+                "json:target/cucumber-reports/cucumber.json"
+        },
+        features = {"src/test/resources/features"},
+        glue = {"com.iaditya.bdd.cucumber_sample"}
+)public class RunCoffeeTest {
 	
 }
